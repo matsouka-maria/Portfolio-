@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maria Matsouka | Certificates</title>
+<meta name="description" content="Verified Coursera certificates from Google, IBM and Meta earned by Maria Matsouka.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d12;--surface:#13161d;--surface2:#191d27;--line:#262b38;--ink:#eef0f5;--muted:#9097a8;--accent:#7aa2ff;--accent-soft:rgba(122,162,255,.14);
+ --ibm:#6ea6ff;--google:#7fd49a;--meta:#b99aff;
+ --font-display:"Bricolage Grotesque",system-ui,sans-serif;--font-body:"DM Sans",system-ui,sans-serif;--font-mono:"DM Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:light){:root{--bg:#f6f7fa;--surface:#fff;--surface2:#f0f2f7;--line:#dde1ea;--ink:#12151c;--muted:#5d6577;--accent:#2f5bd8;--accent-soft:rgba(47,91,216,.1);--ibm:#2a62c9;--google:#1f8a4a;--meta:#6a45d1}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px}
+header{padding:64px 0 36px;display:grid;gap:28px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(40px,7vw,76px);line-height:1;letter-spacing:-.025em;margin:10px 0 0}
+.lead{max-width:60ch;color:var(--muted);font-size:17px;margin:14px 0 0}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.pill{font-size:14px;font-weight:500;text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:999px;transition:border-color .15s,color .15s}
+.pill:hover{border-color:var(--accent);color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat b{display:block;font-family:var(--font-display);font-size:34px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h2{font-family:var(--font-display);font-size:26px;letter-spacing:-.01em;margin:54px 0 6px}
+.sub{color:var(--muted);margin:0 0 20px;font-size:15px}
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s,border-color .18s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.thumb{display:block;background:#fff;aspect-ratio:792/612;overflow:hidden;border-bottom:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;display:flex;gap:8px;align-items:center;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.IBM .dot{background:var(--ibm)}.Google .dot{background:var(--google)}.Meta .dot{background:var(--meta)}
+.name{font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.2;margin:0}
+.meta{font-size:13px;color:var(--muted)}
+.acts{display:flex;gap:8px;margin-top:auto;padding-top:8px;flex-wrap:wrap}
+.btn{font-size:13px;font-weight:600;text-decoration:none;padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface2)}
+.btn.p{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+.btn:hover{border-color:var(--accent)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 6px}
+.chip{font:inherit;font-size:13.5px;font-weight:500;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 15px;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.chip .n{font-family:var(--font-mono);font-size:11.5px;opacity:.7;margin-left:6px}
+input[type=search]{flex:1;min-width:200px;font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:9px 16px;outline:none}
+input[type=search]:focus{border-color:var(--accent)}
+.group{margin-top:34px}
+.ghead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.ghead h3{font-family:var(--font-display);font-size:20px;margin:0}
+.ghead span{font-family:var(--font-mono);font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.grid .name{font-size:15.5px}
+.empty{color:var(--muted);padding:30px 0}
+footer{margin-top:70px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:520px){header{padding-top:40px}.wrap{padding:0 16px 60px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <div class="eyebrow">Certificates portfolio</div>
+    <h1>Maria Matsouka</h1>
+    <p class="lead">Computer science student at Democritus University of Thrace. Every certificate below was earned on Coursera and can be verified with its own public link.</p>
+    <div class="links">
+      <a class="pill" href="https://mariawww.dev">Portfolio site</a>
+      <a class="pill" href="https://github.com/matsouka-maria">GitHub</a>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<h2>Professional Certificates</h2>
+<p class="sub">Full multi-course programs.</p>
+<div class="feat" id="feat"></div>
+
+<h2>All courses</h2>
+<p class="sub">Every individual course, grouped by program.</p>
+<div class="tools">
+  <div id="chips" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+  <input type="search" id="q" placeholder="Search certificates" aria-label="Search certificates">
+</div>
+<div id="groups"></div>
+
+<footer>Certificates issued through Coursera. Use the Verify button on any card to check it on coursera.org.</footer>
+</div>
+<script>
+(function(){
+var ITEMS = [{"name": "Applied Data Science Capstone", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/JV4EOHFF5S9K", "pdf": "certs/IBM%20Data%20Science/Applied%20Data%20Science%20Capstone.pdf", "thumb": "thumbs/applied-data-science-capstone.jpg"}, {"name": "Data Analysis with Python", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/H1OCC05KKASL", "pdf": "certs/IBM%20Data%20Science/Data%20Analysis%20with%20Python.pdf", "thumb": "thumbs/data-analysis-with-python.jpg"}, {"name": "Data Science Methodology", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/4BRW4IHKVGWG", "pdf": "certs/IBM%20Data%20Science/Data%20Science%20Methodology.pdf", "thumb": "thumbs/data-science-methodology.jpg"}, {"name": "Data Scientist Career Guide and Interview Preparation", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/HKDC06DL5PGL", "pdf": "certs/IBM%20Data%20Science/Data%20Scientist%20Career%20Guide%20and%20Interview%20Preparation.pdf", "thumb": "thumbs/data-scientist-career-guide-and-interview-preparation.jpg"}, {"name": "Data Visualization with Python", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/ZVIJ7ZOY4E3S", "pdf": "certs/IBM%20Data%20Science/Data%20Visualization%20with%20Python.pdf", "thumb": "thumbs/data-visualization-with-python.jpg"}, {"name": "Databases and SQL for Data Science with Python", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/IC00IQVWI6CV", "pdf": "certs/IBM%20Data%20Science/Databases%20and%20SQL%20for%20Data%20Science%20with%20Python.pdf", "thumb": "thumbs/databases-and-sql-for-data-science-with-python.jpg"}, {"name": "Generative AI: Elevate Your Data Science Career", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/SM3RJUUYG015", "pdf": "certs/IBM%20Data%20Science/Generative%20AI-%20Elevate%20Your%20Data%20Science%20Career.pdf", "thumb": "thumbs/generative-ai-elevate-your-data-science-career.jpg"}, {"name": "IBM Data Science Professional Certificate", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Professional Certificate", "courses": 12, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/professional-cert/ESU3CBWNSRS6", "pdf": "certs/IBM%20Data%20Science/IBM%20Data%20Science.pdf", "thumb": "thumbs/ibm-data-science.jpg"}, {"name": "Machine Learning with Python", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/V73NIDSZJLOI", "pdf": "certs/IBM%20Data%20Science/Machine%20Learning%20with%20Python.pdf", "thumb": "thumbs/machine-learning-with-python.jpg"}, {"name": "Python Project for Data Science", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/JFSLMOB8DSRR", "pdf": "certs/IBM%20Data%20Science/Python%20Project%20for%20Data%20Science.pdf", "thumb": "thumbs/python-project-for-data-science.jpg"}, {"name": "Python for Data Science, AI & Development", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/QHDJTN20L5S9", "pdf": "certs/IBM%20Data%20Science/Python%20for%20Data%20Science,%20AI%20&%20Development.pdf", "thumb": "thumbs/python-for-data-science-ai-development.jpg"}, {"name": "Tools for Data Science", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/O9J3UEAWFGVR", "pdf": "certs/IBM%20Data%20Science/Tools%20for%20Data%20Science.pdf", "thumb": "thumbs/tools-for-data-science.jpg"}, {"name": "What is Data Science?", "issuer": "IBM", "group": "IBM Data Science", "groupTitle": "IBM Data Science Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/SHZS1ZM5NW5V", "pdf": "certs/IBM%20Data%20Science/What%20is%20Data%20Science?.pdf", "thumb": "thumbs/what-is-data-science.jpg"}, {"name": "Analyze Data to Answer Questions", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/RGWF3AH5TWDA", "pdf": "certs/Google%20Data%20Analytics/Analyze%20Data%20to%20Answer%20Questions.pdf", "thumb": "thumbs/analyze-data-to-answer-questions.jpg"}, {"name": "Ask Questions to Make Data-Driven Decisions", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/0223W6R2GQC4", "pdf": "certs/Google%20Data%20Analytics/Ask%20Questions%20to%20Make%20Data-Driven%20Decisions.pdf", "thumb": "thumbs/ask-questions-to-make-data-driven-decisions.jpg"}, {"name": "Foundations: Data, Data, Everywhere", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/NABW87HH9THO", "pdf": "certs/Google%20Data%20Analytics/Foundations-%20Data,%20Data,%20Everywhere.pdf", "thumb": "thumbs/foundations-data-data-everywhere.jpg"}, {"name": "Google Data Analytics Capstone: Complete a Case Study", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/KPOQXA9UYU0X", "pdf": "certs/Google%20Data%20Analytics/Google%20Data%20Analytics%20Capstone-%20Complete%20a%20Case%20Study.pdf", "thumb": "thumbs/google-data-analytics-capstone-complete-a-case-study.jpg"}, {"name": "Google Data Analytics Professional Certificate", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Professional Certificate", "courses": 9, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/professional-cert/HWI15RQPA6XV", "pdf": "certs/Google%20Data%20Analytics/Google%20Data%20Analytics.pdf", "thumb": "thumbs/google-data-analytics.jpg"}, {"name": "Introduction to Data Analysis Using Python", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/BFCMIUUMQ9I6", "pdf": "certs/Google%20Data%20Analytics/Introduction%20to%20Data%20Analysis%20Using%20Python.pdf", "thumb": "thumbs/introduction-to-data-analysis-using-python.jpg"}, {"name": "Prepare Data for Exploration", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/MMSI7LTXGFS3", "pdf": "certs/Google%20Data%20Analytics/Prepare%20Data%20for%20Exploration.pdf", "thumb": "thumbs/prepare-data-for-exploration.jpg"}, {"name": "Process Data from Dirty to Clean", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/JL3T8699SA5J", "pdf": "certs/Google%20Data%20Analytics/Process%20Data%20from%20Dirty%20to%20Clean.pdf", "thumb": "thumbs/process-data-from-dirty-to-clean.jpg"}, {"name": "Share Data Through the Art of Visualization", "issuer": "Google", "group": "Google Data Analytics", "groupTitle": "Google Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/QNOVRPGPQLD0", "pdf": "certs/Google%20Data%20Analytics/Share%20Data%20Through%20the%20Art%20of%20Visualization.pdf", "thumb": "thumbs/share-data-through-the-art-of-visualization.jpg"}, {"name": "Foundations of Data Science", "issuer": "Google", "group": "Google Advanced Data Analytics", "groupTitle": "Google Advanced Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/6TC2FMS8L736", "pdf": "certs/Google%20Advanced%20Data%20Analytics/Foundations%20of%20Data%20Science.pdf", "thumb": "thumbs/foundations-of-data-science.jpg"}, {"name": "Go Beyond the Numbers: Translate Data into Insights", "issuer": "Google", "group": "Google Advanced Data Analytics", "groupTitle": "Google Advanced Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/MKIAMU4KP3TI", "pdf": "certs/Google%20Advanced%20Data%20Analytics/Go%20Beyond%20the%20Numbers-%20Translate%20Data%20into%20Insights.pdf", "thumb": "thumbs/go-beyond-the-numbers-translate-data-into-insights.jpg"}, {"name": "Google Advanced Data Analytics Capstone", "issuer": "Google", "group": "Google Advanced Data Analytics", "groupTitle": "Google Advanced Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/9R0P58NKCR28", "pdf": "certs/Google%20Advanced%20Data%20Analytics/Google%20Advanced%20Data%20Analytics%20Capstone.pdf", "thumb": "thumbs/google-advanced-data-analytics-capstone.jpg"}, {"name": "Google Advanced Data Analytics Professional Certificate", "issuer": "Google", "group": "Google Advanced Data Analytics", "groupTitle": "Google Advanced Data Analytics Professional Certificate", "kind": "Professional Certificate", "courses": 7, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/professional-cert/TC9URD14L41E", "pdf": "certs/Google%20Advanced%20Data%20Analytics/Google%20Advanced%20Data%20Analytics.pdf", "thumb": "thumbs/google-advanced-data-analytics.jpg"}, {"name": "Regression Analysis: Simplify Complex Data Relationships", "issuer": "Google", "group": "Google Advanced Data Analytics", "groupTitle": "Google Advanced Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/FSO54RAH7SVV", "pdf": "certs/Google%20Advanced%20Data%20Analytics/Regression%20Analysis-%20Simplify%20Complex%20Data%20Relationships.pdf", "thumb": "thumbs/regression-analysis-simplify-complex-data-relationships.jpg"}, {"name": "The Nuts and Bolts of Machine Learning", "issuer": "Google", "group": "Google Advanced Data Analytics", "groupTitle": "Google Advanced Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/YME1MP97M42O", "pdf": "certs/Google%20Advanced%20Data%20Analytics/The%20Nuts%20and%20Bolts%20of%20Machine%20Learning.pdf", "thumb": "thumbs/the-nuts-and-bolts-of-machine-learning.jpg"}, {"name": "The Power of Statistics", "issuer": "Google", "group": "Google Advanced Data Analytics", "groupTitle": "Google Advanced Data Analytics Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/2YOAII1Q8L5N", "pdf": "certs/Google%20Advanced%20Data%20Analytics/The%20Power%20of%20Statistics.pdf", "thumb": "thumbs/the-power-of-statistics.jpg"}, {"name": "Accelerate Your Job Search with AI", "issuer": "Google", "group": "Google IT Support", "groupTitle": "Google IT Support Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/CGZGRBJPP0EL", "pdf": "certs/Google%20IT%20Support/Accelerate%20Your%20Job%20Search%20with%20AI.pdf", "thumb": "thumbs/accelerate-your-job-search-with-ai.jpg"}, {"name": "Google IT Support Professional Certificate", "issuer": "Google", "group": "Google IT Support", "groupTitle": "Google IT Support Professional Certificate", "kind": "Professional Certificate", "courses": 6, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/professional-cert/S58X71L9OA8Z", "pdf": "certs/Google%20IT%20Support/Google%20IT%20Support.pdf", "thumb": "thumbs/google-it-support.jpg"}, {"name": "IT Security: Defense against the digital dark arts", "issuer": "Google", "group": "Google IT Support", "groupTitle": "Google IT Support Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/5S7M1GOERAME", "pdf": "certs/Google%20IT%20Support/IT%20Security-%20Defense%20against%20the%20digital%20dark%20arts.pdf", "thumb": "thumbs/it-security-defense-against-the-digital-dark-arts.jpg"}, {"name": "Operating Systems and You: Becoming a Power User", "issuer": "Google", "group": "Google IT Support", "groupTitle": "Google IT Support Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/I8GZS6CLK0UF", "pdf": "certs/Google%20IT%20Support/Operating%20Systems%20and%20You-%20Becoming%20a%20Power%20User.pdf", "thumb": "thumbs/operating-systems-and-you-becoming-a-power-user.jpg"}, {"name": "System Administration and IT Infrastructure Services", "issuer": "Google", "group": "Google IT Support", "groupTitle": "Google IT Support Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/CDRK9XRI1TZ2", "pdf": "certs/Google%20IT%20Support/System%20Administration%20and%20IT%20Infrastructure%20Services.pdf", "thumb": "thumbs/system-administration-and-it-infrastructure-services.jpg"}, {"name": "Technical Support Fundamentals", "issuer": "Google", "group": "Google IT Support", "groupTitle": "Google IT Support Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/TJ0ZPA7FF79D", "pdf": "certs/Google%20IT%20Support/Technical%20Support%20Fundamentals.pdf", "thumb": "thumbs/technical-support-fundamentals.jpg"}, {"name": "The Bits and Bytes of Computer Networking", "issuer": "Google", "group": "Google IT Support", "groupTitle": "Google IT Support Professional Certificate", "kind": "Course", "courses": 0, "date": "Jul 22, 2026", "sort": "2026-07-22", "verify": "https://coursera.org/verify/8H78LK9C4EU3", "pdf": "certs/Google%20IT%20Support/The%20Bits%20and%20Bytes%20of%20Computer%20Networking.pdf", "thumb": "thumbs/the-bits-and-bytes-of-computer-networking.jpg"}, {"name": "Crash Course on Python", "issuer": "Google", "group": "Google IT Automation (single courses)", "groupTitle": "Google IT Automation with Python (individual courses)", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/2R2R988R3IWK", "pdf": "certs/Google%20IT%20Automation%20(single%20courses)/Crash%20Course%20on%20Python.pdf", "thumb": "thumbs/crash-course-on-python.jpg"}, {"name": "Introduction to Git and GitHub", "issuer": "Google", "group": "Google IT Automation (single courses)", "groupTitle": "Google IT Automation with Python (individual courses)", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/HRWWAWF3C9XJ", "pdf": "certs/Google%20IT%20Automation%20(single%20courses)/Introduction%20to%20Git%20and%20GitHub.pdf", "thumb": "thumbs/introduction-to-git-and-github.jpg"}, {"name": "Using Python to Interact with the Operating System", "issuer": "Google", "group": "Google IT Automation (single courses)", "groupTitle": "Google IT Automation with Python (individual courses)", "kind": "Course", "courses": 0, "date": "Jul 27, 2026", "sort": "2026-07-27", "verify": "https://coursera.org/verify/HSV4Y92U7G5T", "pdf": "certs/Google%20IT%20Automation%20(single%20courses)/Using%20Python%20to%20Interact%20with%20the%20Operating%20System.pdf", "thumb": "thumbs/using-python-to-interact-with-the-operating-system.jpg"}, {"name": "Coding Interview Preparation", "issuer": "Meta", "group": "Meta", "groupTitle": "Meta (individual course)", "kind": "Course", "courses": 0, "date": "Oct 12, 2026", "sort": "2026-10-12", "verify": "https://coursera.org/verify/VBIL48XL93XM", "pdf": "certs/Meta/Coding%20Interview%20Preparation.pdf", "thumb": "thumbs/coding-interview-preparation.jpg"}];
+var COURSES = ITEMS.filter(function(i){return i.kind==="Course"});
+var filter = "All", query = "";
+function esc(s){return String(s).replace(/[&<>"]/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]})}
+function card(i, big){
+  var meta = i.issuer + " &middot; " + i.date + (i.kind==="Professional Certificate" ? " &middot; " + i.courses + " courses" : "");
+  return '<article class="card ' + i.issuer + '">' +
+    '<a class="thumb" href="' + i.pdf + '" target="_blank" rel="noopener" aria-label="Open ' + esc(i.name) + ' certificate"><img loading="lazy" src="' + i.thumb + '" alt="Certificate: ' + esc(i.name) + '"></a>' +
+    '<div class="body"><div class="tag"><span class="dot"></span>' + (i.kind==="Professional Certificate" ? "Professional Certificate" : "Course") + '</div>' +
+    '<h3 class="name">' + esc(i.name) + '</h3><div class="meta">' + meta + '</div>' +
+    '<div class="acts"><a class="btn p" href="' + i.verify + '" target="_blank" rel="noopener">Verify</a><a class="btn" href="' + i.pdf + '" target="_blank" rel="noopener">PDF</a></div></div></article>';
+}
+// stats
+var specs = ITEMS.filter(function(i){return i.kind!=="Course"});
+var issuers = {}; ITEMS.forEach(function(i){issuers[i.issuer]=1});
+document.getElementById("stats").innerHTML =
+  '<div class="stat"><b>' + ITEMS.length + '</b><span>Certificates</span></div>' +
+  '<div class="stat"><b>' + specs.length + '</b><span>Professional certificates</span></div>' +
+  '<div class="stat"><b>' + (ITEMS.length - specs.length) + '</b><span>Courses</span></div>' +
+  '<div class="stat"><b>' + Object.keys(issuers).length + '</b><span>Issuers</span></div>';
+document.getElementById("feat").innerHTML = specs.map(function(i){return card(i,true)}).join("");
+// chips
+var names = ["All","IBM","Google","Meta"];
+function renderChips(){
+  document.getElementById("chips").innerHTML = names.map(function(n){
+    var c = n==="All" ? COURSES.length : COURSES.filter(function(i){return i.issuer===n}).length;
+    return '<button class="chip" type="button" data-f="' + n + '" aria-pressed="' + (filter===n) + '">' + n + '<span class="n">' + c + '</span></button>';
+  }).join("");
+}
+function renderGroups(){
+  var q = query.trim().toLowerCase();
+  var list = COURSES.filter(function(i){
+    return (filter==="All" || i.issuer===filter) && (!q || (i.name + " " + i.groupTitle + " " + i.issuer).toLowerCase().indexOf(q) > -1);
+  });
+  var order = [], map = {};
+  list.forEach(function(i){ if(!map[i.group]){map[i.group]=[];order.push(i.group)} map[i.group].push(i); });
+  var html = order.map(function(g){
+    var arr = map[g];
+    return '<section class="group"><div class="ghead"><h3>' + esc(arr[0].groupTitle) + '</h3><span>' + arr.length + ' course' + (arr.length===1?"":"s") + '</span></div><div class="grid">' + arr.map(function(i){return card(i,false)}).join("") + '</div></section>';
+  }).join("");
+  document.getElementById("groups").innerHTML = html || '<div class="empty">Nothing matches that search.</div>';
+}
+document.getElementById("chips").addEventListener("click", function(e){
+  var b = e.target.closest("button[data-f]"); if(!b) return;
+  filter = b.getAttribute("data-f"); renderChips(); renderGroups();
+});
+document.getElementById("q").addEventListener("input", function(e){ query = e.target.value; renderGroups(); });
+renderChips(); renderGroups();
+})();
+</script>
+</body>
+</html>
