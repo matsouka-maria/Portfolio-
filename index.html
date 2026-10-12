@@ -87,6 +87,8 @@ h1 span{display:block;background:linear-gradient(100deg,#fff 10%,#9db8ff 45%,#c7
 .card:hover{border-color:color-mix(in srgb,var(--c) 70%,transparent);box-shadow:0 30px 60px -25px color-mix(in srgb,var(--c) 55%,transparent)}
 .card:hover::before{opacity:1}
 .thumb{position:relative;display:block;aspect-ratio:792/612;overflow:hidden;background:#fff;cursor:zoom-in;border:0;padding:0;width:100%}
+.thumb.noimg{background:linear-gradient(135deg,color-mix(in srgb,var(--c) 45%,#0b0d14),#0b0d14 80%)}
+.thumb.noimg::before{content:"Certificate";position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:26px;letter-spacing:-.02em;color:rgba(255,255,255,.55)}
 .thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .card:hover .thumb img{transform:scale(1.06)}
 .thumb::after{content:"Preview";position:absolute;right:12px;bottom:12px;font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(8,10,16,.72);padding:6px 11px;border-radius:999px;backdrop-filter:blur(8px);opacity:0;transform:translateY(6px);transition:all .25s}
@@ -159,9 +161,9 @@ footer{margin:120px 0 50px;padding-top:24px;border-top:1px solid var(--line);col
       </div>
     </div>
     <div class="fan" id="fan" aria-hidden="true">
-      <div class="sheet s1"><img src="thumbs/ibm-data-science.jpg" alt=""></div>
-      <div class="sheet s2"><img src="thumbs/google-data-analytics.jpg" alt=""></div>
-      <div class="sheet s3"><img src="thumbs/google-advanced-data-analytics.jpg" alt=""></div>
+      <div class="sheet s1"><img src="thumbs/ibm-data-science.jpg" alt="" onerror="this.parentNode.remove()"></div>
+      <div class="sheet s2"><img src="thumbs/google-data-analytics.jpg" alt="" onerror="this.parentNode.remove()"></div>
+      <div class="sheet s3"><img src="thumbs/google-advanced-data-analytics.jpg" alt="" onerror="this.parentNode.remove()"></div>
       <div class="badge"><span id="bigN">0</span><small>certificates</small></div>
     </div>
   </section>
@@ -213,7 +215,7 @@ function idx(i){return ITEMS.indexOf(i)}
 function card(i){
   var meta=i.issuer+" &middot; "+i.date+(i.kind!=="Course"?" &middot; "+i.courses+" courses":"")+(i.extra?'<br>'+esc(i.extra):"");
   return '<article class="card '+i.issuer+'" data-i="'+idx(i)+'">'+
-   '<button class="thumb" type="button" data-open="'+idx(i)+'" aria-label="Preview '+esc(i.name)+'"><img loading="lazy" src="'+i.thumb+'" alt="Certificate: '+esc(i.name)+'"></button>'+
+   '<button class="thumb" type="button" data-open="'+idx(i)+'" aria-label="Preview '+esc(i.name)+'"><img loading="lazy" src="'+i.thumb+'" alt="Certificate: '+esc(i.name)+'" onerror="this.parentNode.classList.add(\'noimg\');this.remove()"></button>'+
    '<div class="body"><div class="tag"><span class="dot"></span>'+(i.kind!=="Course"?"Professional Certificate":"Course")+'</div>'+
    '<h3 class="name">'+esc(i.name)+'</h3><div class="meta">'+meta+'</div>'+
    '<div class="acts">'+(i.verify?'<a class="btn p" href="'+i.verify+'" target="_blank" rel="noopener">Verify</a>':"")+'<a class="btn" href="'+i.pdf+'" target="_blank" rel="noopener">PDF</a></div></div></article>';
